@@ -327,6 +327,7 @@ class CollagePanel(context: Context, val listener: Listener) : FrameLayout(conte
                 return true
             }
         })
+        tap.setIsLongpressEnabled(false) // a slow finger-up must still count as a tap
         val pinch = ScaleGestureDetector(context, object : ScaleGestureDetector.SimpleOnScaleGestureListener() {
             override fun onScale(d: ScaleGestureDetector): Boolean {
                 val newZoom = (zoom * d.scaleFactor).coerceIn(0.5f, 8f)

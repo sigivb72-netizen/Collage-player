@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Player" app:iconSpaceReserved="false">
+        <ListPreference app:key="hw_decoding" app:title="Hardware decoding" app:iconSpaceReserved="false"
+            app:defaultValue="auto" app:entries="@array/hw_names" app:entryValues="@array/hw_values"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat app:key="resume_playback" app:title="Resume where you left off"
+            app:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat app:key="gestures" app:title="Swipe gestures"
+            app:summary="Left side: brightness · Right side: volume · Horizontal: seek"
+            app:defaultValue="true" app:iconSpaceReserved="false" />
+        <ListPreference app:key="double_tap_seek" app:title="Double-tap seek" app:iconSpaceReserved="false"
+            app:defaultValue="10" app:entries="@array/seek_names" app:entryValues="@array/seek_values"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat app:key="keep_speed" app:title="Remember playback speed"
+            app:defaultValue="false" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat app:key="auto_pip" app:title="Picture-in-picture when leaving the app"
+            app:defaultValue="false" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat app:key="time_stretch" app:title="Keep audio pitch when changing speed"
+            app:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat app:key="skip_loop_filter" app:title="Fast software decoding"
+            app:summary="Skips the deblocking filter. Helps slow phones with videos that can't be hardware decoded."
+            app:defaultValue="false" app:iconSpaceReserved="false" />
+        <ListPreference app:key="subtitle_size" app:title="Subtitle size" app:iconSpaceReserved="false"
+            app:defaultValue="16" app:entries="@array/sub_size_names" app:entryValues="@array/sub_size_values"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Collage mode" app:iconSpaceReserved="false">
+        <SwitchPreferenceCompat app:key="collage_optimize" app:title="Offer to optimize videos when adding"
+            app:summary="Re-encode big videos to a smaller size so many can play at once without lag"
+            app:defaultValue="true" app:iconSpaceReserved="false" />
+        <ListPreference app:key="collage_optimize_size" app:title="Optimized size" app:iconSpaceReserved="false"
+            app:defaultValue="720" app:entries="@array/opt_names" app:entryValues="@array/opt_values"
+            app:useSimpleSummaryProvider="true" />
+        <SwitchPreferenceCompat app:key="collage_auto_next" app:title="When a video ends, shuffle to another"
+            app:summary="Off: each panel loops its video"
+            app:defaultValue="false" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat app:key="collage_random_start" app:title="Start videos at a random point"
+            app:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat app:key="collage_stagger" app:title="Staggered start"
+            app:summary="Start panels one after another instead of all at once (smoother on slow phones)"
+            app:defaultValue="true" app:iconSpaceReserved="false" />
+        <SwitchPreferenceCompat app:key="collage_lag_monitor" app:title="Lag monitor"
+            app:summary="Show a warning on panels that drop frames"
+            app:defaultValue="true" app:iconSpaceReserved="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Collage Player</string>
+    <string name="settings">Settings</string>
+    <string name="videos">Videos</string>
+    <string name="folders">Folders</string>
+    <string name="audio">Audio</string>
+    <string name="collage">Collage</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="open_stream">Open network stream</string>
+    <string name="refresh">Refresh</string>
+    <string name="grant_permission">Collage Player needs access to your videos to show your library.</string>
+    <string name="grant">Grant access</string>
+    <string name="empty_library">No media found</string>
+    <string name="collage_empty">The \"Collage Mode\" folder is empty.\nTap \"Add from gallery\" to copy videos into it.</string>
+    <string name="add_from_gallery">Add from gallery</string>
+    <string name="start_collage">Start collage</string>
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <color name="accent">#FFFF8800</color>
+    <color name="accent_dark">#FFCC6A00</color>
+    <color name="bg">#FF121212</color>
+    <color name="surface">#FF1E1E1E</color>
+    <color name="surface2">#FF2A2A2A</color>
+    <color name="text">#FFEEEEEE</color>
+    <color name="text_dim">#FFAAAAAA</color>
+    <color name="overlay">#B3000000</color>
+    <color name="ic_bg">#FF1E1E1E</color>
+</resources>

@@ -1,0 +1,46 @@
+<resources>
+    <string-array name="hw_names">
+        <item>Automatic (recommended)</item>
+        <item>Always hardware</item>
+        <item>Software only</item>
+    </string-array>
+    <string-array name="hw_values">
+        <item>auto</item>
+        <item>on</item>
+        <item>off</item>
+    </string-array>
+    <string-array name="seek_names">
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+    </string-array>
+    <string-array name="seek_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="sub_size_names">
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="sub_size_values">
+        <item>20</item>
+        <item>16</item>
+        <item>13</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="opt_names">
+        <item>480p (smoothest, 3×3 on older phones)</item>
+        <item>720p (recommended)</item>
+        <item>1080p</item>
+    </string-array>
+    <string-array name="opt_values">
+        <item>480</item>
+        <item>720</item>
+        <item>1080</item>
+    </string-array>
+</resources>
